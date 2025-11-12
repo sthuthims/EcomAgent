@@ -6,9 +6,6 @@ import os
 import glob
 from pathlib import Path
 
-# ============================================================
-# GLOBAL DATABASE CONNECTION
-# ============================================================
 
 _db_instance = None
 
@@ -198,10 +195,6 @@ def get_stats():
         return stats
     except Exception as e:
         return {'error': str(e)}
-
-# ============================================================
-# RUN TEST ON IMPORT
-# ============================================================
 
 if __name__ == "__main__":
     # Run comprehensive test
