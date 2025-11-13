@@ -1,5 +1,4 @@
-# database.py - DuckDB Setup (AUTO-DETECTS ALL CSV FILES)
-
+# database.py 
 import duckdb
 import pandas as pd
 import os

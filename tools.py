@@ -1,4 +1,4 @@
-# tools.py - helper utilities using Python-side date cutoff computation (safe for DuckDB)
+# tools.py 
 
 import pandas as pd
 from database import get_db

@@ -508,7 +508,7 @@ with st.sidebar:
         ("💳 Payment methods?", "payment methods"),
         ("🗺️ Geographic distribution?", "geographic distribution"),
         ("📊 Order status?", "order status"),
-        ("💵 Average order value?", "average order value"),
+        
     ]
     for qtext, qval in quick_queries:
         if st.button(qtext, key=f"quick_{qval}", use_container_width=True):
@@ -526,7 +526,7 @@ user_input = st.text_input(
 if st.button("🚀 Analyze", type="primary", key="analyze_btn"):
     st.session_state.run_query = True
 
-# Process query immediately (no experimental rerun)
+# Process query immediately
 if st.session_state.get("run_query", False):
     effective_query = user_input.strip() if user_input and user_input.strip() else st.session_state.query_input.strip()
     if effective_query:

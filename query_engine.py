@@ -1,6 +1,4 @@
 # query_engine.py
-# Robust IntelligentQueryEngine: compute date cutoffs in Python and inject DATE literals into SQL
-# Replaces database-side date_add calls to avoid Binder/Signature errors across DuckDB versions.
 
 import re
 from datetime import datetime, date
